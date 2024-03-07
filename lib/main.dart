@@ -23,10 +23,8 @@ class HomePage extends StatelessWidget{
       appBar: AppBar(
         title:const Text('Pratikum Layout Flutter'),
       ),
-    body: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.end,
-      children: <Widget>[
+    body: ListView( 
+        children: <Widget>[
         Container(
           color: const Color.fromARGB(255, 239, 134, 126), 
           height: 100,
@@ -44,7 +42,7 @@ class HomePage extends StatelessWidget{
         ),
       ],
     ),
-    );
+    );    
   }
 }
 
